@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function changetext()
+        // {
+        //     document.getElementById("msg").innerText="welcome";
+        //     document.body.style.backgroundColor="lightgreen";
+        // }
+        let v=0
+        function update()
+        {
+            document.getElementById("count").innerHTML=v;
+        }
+        function dec()
+        {
+            v-=10    
+            update();
+        }
+        function inc()
+        {
+            v+=10
+            update();
+        }
+        function res()
+        {
+            v=0
+            update();
+        }
+    </script>
+</head>
+<body>
+    <!-- <p id="msg">Hello World</p> -->
+    <p id="count">0</p>
+    <button onclick="inc()">inc</button>
+    <button onclick="res()">dec</button>
+    <button onclick="dec()">dec</button>
+</body>
+</html>

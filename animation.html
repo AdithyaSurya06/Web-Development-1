@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: top;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            position:fixed;
+        }
+
+        @keyframes top {
+            0%{background-color: aquamarine; left: 0px;bottom: 0px;}
+            25%{background-color: bisque;left:580px;bottom: 0px;transform: scale(0.5);}
+            50%{background-color: burlywood;left: 580px;bottom: 220px;transform: skew(30deg);}
+            75%{background-color:chartreuse;left:0px;bottom:220px;transform: translate(50px);}
+            100%{background-color: crimson;left: 0px;bottom:0px;transform:rotate(180deg);}
+           
+        }
+         .none{
+             width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: hi;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            position:fixed;
+        }
+        @keyframes hi{
+             0%{background-color: aquamarine; right: 0px;bottom: 0px;transform:rotate(360deg);}
+            25%{background-color: bisque;right:580px;bottom: 0px;transform: scale(0.5);}
+            50%{background-color: burlywood;right: 580px;bottom: 220px;transform: skew(30deg);}
+            75%{background-color:chartreuse;right:0px;bottom:220px;transform: translate(50px);}
+            100%{background-color: crimson;right: 0px;bottom:0px;transform:rotate(180deg);}
+        }
+        .yes{
+              width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: hello;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            position:fixed;
+        }
+        @keyframes hello{
+             0%{background-color: aquamarine; left: 0px;top: 0px;transform:rotate(360deg);}
+            25%{background-color: bisque;left:580px;top: 0px;transform: scale(0.5);}
+            50%{background-color: burlywood;left: 580px;top: 220px;transform: skew(30deg);}
+            75%{background-color:chartreuse;left:0px;top:220px;transform: translate(50px);}
+            100%{background-color: crimson;left: 0px;top:0px;transform:rotate(180deg);}
+
+        }
+        .no{
+             width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: wait;
+            animation-iteration-count: infinite;
+            animation-duration: 6s;
+            position:fixed;
+        }
+        @keyframes wait{
+             0%{background-color: aquamarine; right: 0px;top: 0px;transform:rotate(360deg);}
+            25%{background-color: bisque;right:580px;top: 0px;transform: scale(0.5);}
+            50%{background-color: burlywood;right: 580px;top: 220px;transform: skew(30deg);}
+            75%{background-color:chartreuse;right:0px;top:220px;transform: translate(50px);}
+            100%{background-color: crimson;right: 0px;top:0px;transform:rotate(180deg);}
+        }  
+          /* .item{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation-name: top;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            position:absolute;
+         }
+         @keyframes top{
+            0%{background-color: aqua;right: 0px;}
+            25%{background-color: brown;right:200px}
+            50%{background-color: blueviolet;right: 200px;}  
+            75%{background-color: blue;right: 0px;}
+            100%{background-color: burlywood;right: 0px;}
+         } */
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+    <div class="none"></div>
+    <div class="yes"></div>
+    <div class="no"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>
+<style>
+    .container
+    {
+        background-color: beige;
+        display: flex;
+    }
+    .box1
+    {
+        background-color: brown;
+        padding: 20px;
+        margin: 20px;
+    }
+    .box2
+    {
+        background-color: cadetblue;
+        padding: 20px;
+        margin: 20px;
+    }
+    .box3
+    {
+        background-color: crimson;
+        padding: 20px;
+        margin: 20px;  
+    }
+    @media(min-width:300px){
+        .box1
+        {
+            background-color:blue;
+            width: 100px;
+            height: 100px;
+            font-size: large;
+        }
+    }
+    @media(min-width:700px){
+        .box2
+        {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            font-size: large;
+        }
+    }
+    @media(max-width:500px){
+        .box3
+        {
+            background-color: chartreuse;
+            width: 100px;
+            height: 100px;
+            font-size: large;
+        }
+    }
+</style>
+    <main>
+        <div id="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio, odit ullam illum ratione iure sapiente doloremque dolorem tenetur tempore sunt iusto animi est eaque recusandae dolorum fuga voluptatibus ea.</p>
+        </div>
+        <div class="heading">
+            <h1>HOME</h1>
+            <h2>ABOUT</h2>
+            <h3>welcome</h3>
+        </div>
+        <div>
+            <button style=background-color:orange type="submit">SUBMIT</button>
+        </div>
+        <style>
+             #box
+            {
+                 background-color: blue;
+            }
+            .heading
+            {
+                  background-color: green;
+            }
+        </style>
+    </main>
+</body>
+</html>

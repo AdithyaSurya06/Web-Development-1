@@ -1,0 +1,65 @@
+.container
+{
+    background-color:lightgrey;
+    text-align: center;
+    width: 70%;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 20px;
+}
+h1
+{
+    background-color:rgb(139, 187, 100);
+    text-align: center;
+    width:52%;
+    font-weight: bolder;
+    margin-left: 350px;
+    text-transform:uppercase;
+    border-radius: 20px;
+    box-shadow: 0 0 20px;
+}
+form
+{
+    margin-left:350px ;
+}
+img
+{
+    border-radius:100px;
+    box-shadow: 0 0 20px;   
+}   
+#h
+{
+    border-radius:10px;
+    box-shadow: 0 0 20px;
+}   
+#f
+{
+    border-radius:10px;
+    box-shadow: 0 0 20px;
+}   
+#au
+{
+    border-radius:10px;
+    box-shadow: 0 0 20px;
+}   
+#i
+{
+    border-radius:100px;
+    box-shadow: 0 0 20px;
+}     
+.abhi
+{
+    display: flex;
+}
+ol{
+    display: flex;
+}
+ol li{
+    margin-left: 150px;
+   text-decoration: underline;
+    text-shadow: 20px;
+    font-weight: bold; 
+}

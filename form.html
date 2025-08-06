@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>INTRODUCTION</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+    <marquee>Employee Form Is Open Now</marquee>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+    <h1>Employee details</h1>
+    <body>
+        
+        <form action="table.html" method="get">
+            <div class="container">
+            <div>
+               <label for="s">Employee Name:</label>
+               <input type="text" required placeholder="enter your name" id="s">
+            </div><br>
+            <div>
+               <label for="t">Employee ID:</label>
+               <input type="number" required placeholder="enter ID" id="t">
+            </div><br>
+            <div>
+               <label for="a">Village:</label>
+               <input type="text" required placeholder="enter village" id="a">
+            </div><br>
+            <div>
+               <label for="d">Phone No:</label>
+               <input type="tel" required placeholder="enter number" id="d" pattern="[0,9]{10,15}">
+            </div><br>
+            <div>
+                <label for="e">Email:</label>
+                <input type="email" required placeholder="enter email" id="e" >
+            </div><br>
+            <div>
+                <label for="p">Password:</label>
+                <input type="password" required placeholder="enter password" id="p">
+            </div><br>
+            <div>
+                <label for="d">Date of Birth:</label>
+                <input type="date" required placeholder="DOB" id="d">        
+            </div><br>
+            <div>
+                <input type="file" required><br>
+            </div>
+            <div>
+                Select Gender
+                <label for="g"><input type="radio" value="g" name="button" id="g">male</label>
+                <label for="gf"><input type="radio" value="gf" name="button" id="gf">female</label>
+            </div><br>
+            <div>
+                Skills
+                <label for="html"><input type="checkbox" value="html" name="button" id="html">HTML</label>
+                <label for="css"><input type="checkbox" value="css" name="button" id="css">CSS</label>
+                <label for="js"><input type="checkbox" value="js" name="button" id="js">JAVA</label>
+            </div><br>
+            <div>
+                <label for="q">Select State:</label>
+                <select name="state" id="q">
+                    <option value="andhra pradesh">andhra pradesh</option>
+                    <option value="telangana">telangana</option> 
+                    <option value="karnataka">karnataka</option>           
+                </select>
+            </div><br>
+            <button type="submit">submit</button>
+            </div>
+        </form><br>
+        <ol>
+            <li>Photo</li>
+            <li>Video</li>
+            <li>YouTube</li>
+            <li>Audio</li>
+            <li>Cat Link</li>
+        </ol> 
+        <div class="abhi">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" width="220" height="180" alt="cat" style="display: block;margin: auto;" id="img">
+            <video src="17394747-hd_1080_1920_30fps.mp4" width="220" controls="" poster="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" style="display: block;margin: auto;" id="h"></video>
+            <iframe width="220" height="180" src="https://www.youtube.com/embed/SarjxS9nxvA?si=jfT78U27eGEh1KAi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin: auto;" id="f"></iframe>
+            <audio width="220" height="180" src="Ishq Mera (Feat. Esha Gupta) - Jubin Nautiyal 128 Kbps.mp3" controls="" style="display: block;margin: auto;"id="au"></audio> 
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" width="220" height="180" alt="" style="display: block;margin: auto;"id=i></a>  
+        </div>
+     </body>
+</html>

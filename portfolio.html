@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f6f9;
+        width:800px;
+        margin-left: 320px;
+     }
+    header {
+        background-color: #34495e;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    nav a{
+        color: #f4f6f9;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    img {
+      display:block;
+      margin:auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 3px solid #34495e;
+    }
+
+    section {
+      background: rgb(212, 228, 247);
+      margin: 20px ;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill label {
+      font-weight: bold;
+      /* display: block;
+      margin-bottom: 5px; */
+    }
+
+    progress {
+      width: 80%;
+      height:20px;
+    }
+    nav a:hover{
+        background-color: #6982a8;
+        text-decoration: underline;
+    }
+    button:hover{
+        background-color: #3188df;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Adithya</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#languages">Languages</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <img src="WIN_20250319_10_39_57_Pro.jpg" alt="" width="200">
+            <h2>About Me</h2>
+            <p>Hi everyone, I am Adithya, learning web development. I enjoy building websites, and this is my simple portfolio.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <label>HTML & CSS</label><br>
+                <progress value="90" max="100" title="90%">90%</progress>
+            </div>
+            <div class="skill">
+                <label>Python</label><br>
+                <progress value="80" max="100" title="80%">80%</progress>
+            </div>
+            <div class="skill">
+                <label>Responsive Web Design</label><br>
+                <progress value="70" max="100" title="70%">70%</progress>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>Personal Portfolio Website</li>
+                <li>Biz-Brighter</li>
+                <li>Tribute Page</li>
+            </ol>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <ul>
+                <li>Azure AI Algorithms - Microsoft</li>
+                <li>Junior Developer - Silktimate</li>
+                <li>Python - Silktimate</li>
+                <li>C Programming - Silktimate</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Telugu (Native)</li>
+            </ul>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <a href="resume.2.html" target="_blank">View My Resume</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+        }
+        .buttonside{
+            display: flex;  
+            justify-content: center;
+        }
+        button{
+            font-size: 15px;
+            background-color: white;
+            margin: 7px;
+            border-radius: 20px;
+        }
+        #counter
+        {
+            font-size: 50px;
+        }
+    </style>
+    <script src="counter.js"></script>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <p id="counter">0</p>
+    <div class="buttonside">
+        <button id="dec_" onclick="dec_()">Decrement</button>
+        <button id="reset_" onclick="reset_()">Reset</button>
+        <button id="inc_" onclick="inc_()">Increment</button>
+    </div>
+</body>
+</html>

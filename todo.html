@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<body>
+    <form onsubmit="addItem()" action="">
+        <input type="text" id="in">
+        <button type="submit">Add</button>
+    </form>
+    <ol id="list"></ol>
+</body>
+<script>
+    function addItem()
+    {
+        event.preventDefault();
+        let item=document.getElementById("in").value;
+
+    //adding or creating the items and delete button
+
+        let li=document.createElement("li")
+        let del=document.createElement("button")
+        li.innerText=item;
+        del.innerText="Delete";
+        del.style.color="red";
+        document.getElementById("list").appendChild(li);
+        li.appendChild(del);
+
+    //deleteing the items and the delete button by clicking
+
+        del.addEventListener("click",()=>{
+            document.getElementById("list").removeChild(li);
+            document.getElementById("list").removeChild(del);
+        })
+    }
+</script>
+</html> 
