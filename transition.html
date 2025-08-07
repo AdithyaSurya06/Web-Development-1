@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITION</title>
+    <style>
+        body{
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+        .hello{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            transition-duration: 2s;
+            transition-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            border-radius: 50px;
+            /* justify-content: center; 
+            align-items: center; */
+            text-align: center;
+        }
+        .hello:hover{
+            background-color:maroon;
+            transform: rotate(360deg); 
+        }
+        .welcome{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            transition-duration: 2s;
+            border-radius: 50px;
+            text-align: center;
+
+        }
+        .welcome:hover{
+            background-color: chocolate;
+            transform:skew(30deg);
+            
+        }
+        .about{
+            height: 100px;
+            width: 100px;
+            background-color:yellowgreen;
+            transition-duration: 2s;
+            border-radius: 50px;
+            text-align: center;
+
+        }
+        .about:hover{
+            background-color: #d0b7e7;
+            transform:scale(0.5);
+        }
+        .enter{
+            height: 100px;
+            width: 100px;
+            background-color:goldenrod;
+            transition-duration: 2s;
+            border-radius: 50px;
+            text-align: center;
+
+        }
+        .enter:hover{
+
+            background-color: chartreuse;
+            transform: translate(30px);
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">hello</div>
+    <div class="welcome">welcome</div>
+    <div class="about">about</div>
+    <div class="enter">enter</div>
+</body>
+</html>
